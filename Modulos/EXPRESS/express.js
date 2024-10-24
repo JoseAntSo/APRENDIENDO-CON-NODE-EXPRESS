@@ -24,13 +24,28 @@ app.get("/", (req,res) => {
 
 });
 
+
+// aprendiendo sobre params, esto significa que nuestra URL puede tener datos o informacion dinamica
+// esta informacion se la identifica despues de unos puntos como tenemos en el ejemplo de abajo
 app.get("/user/:name-:id", (req,res) => {
     res.set({"content-type":"text/html"});
     res.end(
-        `<h1>Bienvenido a Express ${req.params.name}. Eres el usuario n* ${req.params.id} en nuestra web!!!</h1>`
+        `<h1>Aprendiendo sobre Params con ${req.params.name}. Eres el usuario n* ${req.params.id} en nuestra web!!!</h1>`
     )
 });
 
+// similar al params, la informacion esta proporcionada desde la URL pero esta es brindada despues de un ? 
+// como podremos ver en el ejemplo de abajo
+
+app.get("/search", (req,res) => {
+
+    //ejemplo para que funcione usar URL
+    // localhost:3000/search?name=jose&id=5
+    res.set({"content-type":"text/html"});
+    res.end(
+        `<h1>Aprendiendo sobre Querys con ${req.query.name}. User: ${req.query.id}!!!</h1>`
+    )
+});
 
 
 app.listen(3000, () => {
