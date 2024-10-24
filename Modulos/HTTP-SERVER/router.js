@@ -1,7 +1,15 @@
+//importamos del modulo http para crear un servidor
+
 import { createServer } from "http";
+
+//creamos el servidor 
 
 const server = createServer((require,response)=>{
     console.log(require);
+
+//controlamos el objeto require(haciendo referencia a la peticion) en la propiedad URL que el recurso que requiere acceder
+//y devolvemos una respuesta, esta seria una forma de controlar que necesita
+
     if(require.url ==="/"){
         response.writeHead(200,{"Contente-Type": "text/html"})
         response.end("Ruta principal");
