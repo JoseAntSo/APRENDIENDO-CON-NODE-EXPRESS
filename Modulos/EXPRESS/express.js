@@ -48,6 +48,12 @@ app.get("/search", (req,res) => {
 });
 
 
+app.get("/dirige",(req,res)=>{
+    // res.send("nashee");
+    res.redirect(301,"https://www.jonmircha.com");
+})
+
+
 app.listen(3000, () => {
     console.log("Iniciando express");
 })

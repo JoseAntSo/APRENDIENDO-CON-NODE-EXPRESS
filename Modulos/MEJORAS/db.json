@@ -1,0 +1,38 @@
+{
+  "profesor": [
+    {
+      "nombre": "Jose Antonio",
+      "apellido": "Soria",
+      "edad": 30,
+      "id": "fd1c"
+    },
+    {
+      "nombre": "Crypton",
+      "apellido": "Yamaha",
+      "edad": 60,
+      "id": "f6bb"
+    }
+  ],
+  "cursos": [
+    {
+      "nombre": "html",
+      "tiempo": "poco",
+      "id": "4b76"
+    },
+    {
+      "nombre": "express",
+      "tiempo": "mucho",
+      "id": "e371"
+    },
+    {
+      "id": "39ac",
+      "nombre": "CSS",
+      "tiempo": "poco"
+    },
+    {
+      "id": "c0e0",
+      "nombre": "buenardo goood",
+      "tiempo": "AMANASHEEE"
+    }
+  ]
+}
